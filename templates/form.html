@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container">
+    <h2>{{ story.title }}</h2>
+    <p>Please fill in the blanks.</p>
+    <form action="/generate" method="get">
+      {% for prompt in story.prompts %}
+        <label for="{{ prompt }}">{{ prompt }}:</label>
+        <input type="text" name="{{ prompt }}" id="{{ prompt }}"><br>
+      {% endfor %}
+      <input type="hidden" name="story_id" value="{{ story.id }}">
+      <input type="submit" value="Generate Story">
+    </form>
+  </div>
+{% endblock %}

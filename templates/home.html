@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Choose a story:</h2>
+  <form action="/form" method="get">
+    {% for story in stories %}
+        <button type="submit" name="story_id" id="{{ story.id }}" value="{{ story.id }}">{{ story.title }}</button><br>
+    {% endfor %}
+  </form>
+{% endblock %} 

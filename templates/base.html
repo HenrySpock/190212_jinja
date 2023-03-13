@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body>
+    <h1>Madlibs!</h1>
+    {% block content %}{% endblock %}
+    <form action="/home">
+      <button type="submit">Return Home</button>
+    </form>
+    <!-- <script src="static/script.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    background-color: #111;
+    background-image: radial-gradient(circle at center, #23538a, #111);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Add this line to center text horizontally */
+  }
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+button, input[type="submit"] {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  color: #111;
+  font-size: 14px;
+  margin-top: 7px;
+  padding: 7px 10px;
+}
+
+form {
+  margin-top: 10px;
+  text-align: center;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: left;
+    width: 30%;
+    float: left;
+    clear: left;
+  }
+
+form input[type="text"] {
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+
+  .container {
+    margin: 0 auto;
+    max-width: 480px;
+    text-align: center; /* Add this line to center text horizontally */
+  }
+
+.content {
+  padding: 8px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
